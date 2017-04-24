@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-iosexist.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftHEXColors.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftSVG.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>69ED2CD5015A0086FE2A8A62A71461B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>93D3C86012B4A6C586FDD4FB49BC4FA6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BDD583B94FC721609BFD3A46761AB715</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CB19E1B25F723E95C4BCA173C35193C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
