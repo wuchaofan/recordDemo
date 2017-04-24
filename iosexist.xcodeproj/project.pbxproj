@@ -29,6 +29,7 @@
 		4F21A5181EA8DF8D00EC8721 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F21A5171EA8DF8D00EC8721 /* SearchViewController.swift */; };
 		4F6483E91EA9A4BA003A4064 /* CommonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6483E81EA9A4BA003A4064 /* CommonTableViewCell.swift */; };
 		4F886A421EADF797003D756F /* 逆流成河.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F886A411EADF797003D756F /* 逆流成河.mp3 */; };
+		4F886A471EAE4CF9003D756F /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F886A461EAE4CF9003D756F /* TakePhotoViewController.swift */; };
 		9F9531925BD72BD106A768FD /* Pods_iosexist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6164CD89C73128C89B223D72 /* Pods_iosexist.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		4F21A5171EA8DF8D00EC8721 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4F6483E81EA9A4BA003A4064 /* CommonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTableViewCell.swift; sourceTree = "<group>"; };
 		4F886A411EADF797003D756F /* 逆流成河.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "逆流成河.mp3"; sourceTree = "<group>"; };
+		4F886A461EAE4CF9003D756F /* TakePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
 		6164CD89C73128C89B223D72 /* Pods_iosexist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosexist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D6A8C50D0B7A22C501204F6 /* Pods-iosexist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosexist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosexist/Pods-iosexist.debug.xcconfig"; sourceTree = "<group>"; };
 		99B9BEA61C3915D626C6D467 /* Pods-iosexist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosexist.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosexist/Pods-iosexist.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				4F21A5111EA89CA100EC8721 /* AddFootBar.swift */,
 				4F1B2E3A1EADD40800C63339 /* RecordView.swift */,
 				4F1B2E3C1EADD8D800C63339 /* WaveView.swift */,
+				4F886A461EAE4CF9003D756F /* TakePhotoViewController.swift */,
 			);
 			name = foot;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				4F1B2E2F1EABA54800C63339 /* ImageCell.swift in Sources */,
 				4F6483E91EA9A4BA003A4064 /* CommonTableViewCell.swift in Sources */,
 				4F1B2E361EAC428400C63339 /* SettingsViewController.swift in Sources */,
+				4F886A471EAE4CF9003D756F /* TakePhotoViewController.swift in Sources */,
 				4F1B2E311EABA58800C63339 /* TextCell.swift in Sources */,
 				4F21A4FA1EA8874800EC8721 /* ViewController.swift in Sources */,
 				4F21A5161EA8AF4F00EC8721 /* ContainerView.swift in Sources */,

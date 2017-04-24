@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        NotificationCenter.default.addObserver(self, selector: #selector(openTakePhoto), name: .openTakePhoto, object: nil)
         view.backgroundColor = UIColor(hex: 0x262e34)
 
         view.addSubview(containerView)
@@ -44,6 +45,24 @@ class ViewController: UIViewController {
         containerView.tableView.register(ImageCell.self, forCellReuseIdentifier: "imagecell")
         containerView.tableView.register(TextCell.self, forCellReuseIdentifier: "textcell")
     }
+    
+ 
+    
+    func openTakePhoto(){
+        
+        let vc = TakePhotoViewController()
+        present(vc, animated: true, completion: nil)
+        
+//        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+//            let imagePicker = UIImagePickerController()
+//            imagePicker.delegate = self
+//            imagePicker.sourceType = .camera
+//            imagePicker.allowsEditing = false
+//            present(imagePicker, animated: true, completion: nil)
+//        }
+    }
+    
+
     
     func leftsidePage (){
         self.view.insertSubview(leftSideView, belowSubview: self.containerView)
@@ -104,7 +123,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
 }
+
 extension ViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
@@ -151,4 +174,8 @@ extension ViewController: UITableViewDataSource{
         return 1
     }
 
+}
+extension ViewController:UIImagePickerControllerDelegate,
+UINavigationControllerDelegate{
+    
 }

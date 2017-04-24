@@ -7,6 +7,11 @@
 import UIKit
 import AVFoundation
 
+extension Notification.Name {
+    
+    static let openTakePhoto = Notification.Name("openTakePhoto")
+}
+
 class AddFootBar: UIView {
     let xView = UIView()
     let textView = UITextView()
@@ -136,26 +141,34 @@ class AddFootBar: UIView {
         let documentsDirectory = paths[0]
         return documentsDirectory
     }
+    //var player: AVAudioPlayer?
     
     func takePhotoAction(){
-        let alertSound = getDocumentsDirectory().appendingPathComponent("recording.m4a")
-        print(alertSound)
-        let path = Bundle.main.path(forResource: "逆流成河", ofType: "mp3")
-        print(path ?? "")
+        //NSNotification.Name("")
+        NotificationCenter.default.post(name: .openTakePhoto, object: nil)
+        
 
-        do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            try AVAudioSession.sharedInstance().setActive(true)
-            let player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
-            
-            player.prepareToPlay()
-            player.volume = 1.0
-            player.delegate = self
-            
-            player.play()
-        } catch let error {
-            print(error.localizedDescription)
-        }
+        
+//        let alertSound = getDocumentsDirectory().appendingPathComponent("recording.m4a")
+//        print(URL(fileURLWithPath: alertSound.path))
+        //let path = Bundle.main.path(forResource: "逆流成河", ofType: "mp3")
+        //print(path ?? "")
+//
+//        do {
+//            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+//            try AVAudioSession.sharedInstance().setActive(true)
+//            let data = try Data(contentsOf: alertSound)
+//
+//            player = try AVAudioPlayer(data: data)
+//            
+//            player?.prepareToPlay()
+//            player?.volume = 1.0
+//            player?.delegate = self
+//            
+//            player?.play()
+//        } catch let error {
+//            print(error.localizedDescription)
+//        }
     }
     func keyboardWillShow(notify: Notification){
         guard let userInfo = notify.userInfo else {
@@ -250,7 +263,4 @@ extension AddFootBar: UITextViewDelegate{
         print("textViewDidBeginEditing")
         inputContent()
     }
-}
-extension AddFootBar: AVAudioPlayerDelegate{
-    
 }
