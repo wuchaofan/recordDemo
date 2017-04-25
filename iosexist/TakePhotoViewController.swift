@@ -246,9 +246,32 @@ class TakePhotoViewController: UIViewController {
             make.left.equalTo(self.closeBtn!.snp.right).offset(10)
         }
         openAlum?.setImage(#imageLiteral(resourceName: "roll-Icon"), for: .normal)
-        
+        openAlum?.addTarget(self, action: #selector(viewAlbum), for: .touchUpInside)
     }
-    func changeMode(){
+    internal func viewAlbum(){
+        
+        PHPhotoLibrary.requestAuthorization { (allowed) in
+            if allowed == .authorized {
+                
+                DispatchQueue.main.async {
+                    let vc = ImagePickerVC()
+                    vc.modalTransitionStyle = .crossDissolve
+                    self.present(vc, animated: true, completion: nil)
+                }
+                
+                
+            }else{
+                
+            }
+        }
+//        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+//            let imagePicker = UIImagePickerController()
+//            imagePicker.sourceType = .photoLibrary
+//            imagePicker.allowsEditing = false
+//            present(imagePicker, animated: true, completion: nil)
+//        }
+    }
+    internal func changeMode(){
         do{
             try captureDevice!.lockForConfiguration()
             //let torchOn = captureDevice!.isTorchActive

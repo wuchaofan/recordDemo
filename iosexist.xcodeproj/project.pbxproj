@@ -31,6 +31,7 @@
 		4F886A421EADF797003D756F /* 逆流成河.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4F886A411EADF797003D756F /* 逆流成河.mp3 */; };
 		4F886A471EAE4CF9003D756F /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F886A461EAE4CF9003D756F /* TakePhotoViewController.swift */; };
 		4F886A491EAF2373003D756F /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F886A481EAF2373003D756F /* PhotoCollectionViewCell.swift */; };
+		4F886A4B1EAF4C64003D756F /* ImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F886A4A1EAF4C64003D756F /* ImagePickerVC.swift */; };
 		9F9531925BD72BD106A768FD /* Pods_iosexist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6164CD89C73128C89B223D72 /* Pods_iosexist.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		4F886A411EADF797003D756F /* 逆流成河.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "逆流成河.mp3"; sourceTree = "<group>"; };
 		4F886A461EAE4CF9003D756F /* TakePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
 		4F886A481EAF2373003D756F /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		4F886A4A1EAF4C64003D756F /* ImagePickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerVC.swift; sourceTree = "<group>"; };
 		6164CD89C73128C89B223D72 /* Pods_iosexist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosexist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D6A8C50D0B7A22C501204F6 /* Pods-iosexist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosexist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iosexist/Pods-iosexist.debug.xcconfig"; sourceTree = "<group>"; };
 		99B9BEA61C3915D626C6D467 /* Pods-iosexist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosexist.release.xcconfig"; path = "Pods/Target Support Files/Pods-iosexist/Pods-iosexist.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				4F1B2E3C1EADD8D800C63339 /* WaveView.swift */,
 				4F886A461EAE4CF9003D756F /* TakePhotoViewController.swift */,
 				4F886A481EAF2373003D756F /* PhotoCollectionViewCell.swift */,
+				4F886A4A1EAF4C64003D756F /* ImagePickerVC.swift */,
 			);
 			name = foot;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				4F21A5001EA8874800EC8721 /* iosexist.xcdatamodeld in Sources */,
 				4F21A4F81EA8874800EC8721 /* AppDelegate.swift in Sources */,
 				4F1B2E381EAC453700C63339 /* WebViewController.swift in Sources */,
+				4F886A4B1EAF4C64003D756F /* ImagePickerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
