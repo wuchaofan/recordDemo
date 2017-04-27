@@ -90,7 +90,7 @@ class AddFootBar: UIView {
     func recordAction(){
 
         recordView = RecordView(frame: CGRect.zero)
-        recordView?.closeBlock = {
+        recordView?.closeBlock = { [unowned self] in
             self.recordView?.removeFromSuperview()
 
                 self.backgroundColor = UIColor.clear

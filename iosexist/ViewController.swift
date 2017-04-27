@@ -70,33 +70,33 @@ class ViewController: UIViewController {
             make.left.top.bottom.equalToSuperview()
             make.width.equalTo(leftSideWidth)
         }
-        leftSideView.feedbackBlock = { title in
+        leftSideView.feedbackBlock = {[unowned self] title in
             let feedbackVC = WebViewController()
             feedbackVC.title = title
             feedbackVC.urlString = "https://www.baidu.com/"
             self.navigationController?.pushViewController(feedbackVC, animated: true)
 
         }
-        leftSideView.termsBlock = { title in
+        leftSideView.termsBlock = {[unowned self] title in
             let termVC = WebViewController()
             termVC.title = title
             termVC.urlString = "https://www.baidu.com/"
             self.navigationController?.pushViewController(termVC, animated: true)
         }
-        leftSideView.privateBlock = { title in
+        leftSideView.privateBlock = {[unowned self] title in
             let vc = WebViewController()
             vc.title = title
             vc.urlString = "https://www.baidu.com/"
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        leftSideView.helpBlock = { title in
+        leftSideView.helpBlock = {[unowned self] title in
             let vc = WebViewController()
             vc.title = title
             vc.urlString = "https://www.baidu.com/"
 
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        leftSideView.settingsBlock = { _ in
+        leftSideView.settingsBlock = {[unowned self] _ in
             
             let settingsVC = SettingsViewController()
             self.navigationController?.pushViewController(settingsVC, animated: true)
@@ -157,7 +157,7 @@ extension ViewController: UITableViewDataSource{
     }
     
     func cellAction(_ cell: CommonTableViewCell, indexPath: IndexPath){
-        cell.deleteCall = {
+        cell.deleteCall = { 
             print("delete: ",indexPath.row)
         }
         cell.shareCall = {
